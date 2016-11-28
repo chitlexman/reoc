@@ -1,0 +1,15 @@
+{
+  "name": "client",
+  "version": "0.0.0",
+  "private": true,
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.11",
+    "gulp-wrap": "^0.13.0"
+  }
+}

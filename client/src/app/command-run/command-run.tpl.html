@@ -1,0 +1,8 @@
+<h1 class="page-header">Запуск команд</h1>
+<form>
+  <label for="command">Команда</label>
+  <input type="text" id="command" ng-model="vm.command">
+  <label for="comment">Комментарий</label>
+  <input type="text" id="comment" ng-model="vm.comment">
+  <button type="button" ng-click="vm.run()" ng-disabled="!vm.command">Запуск</button>
+</form>

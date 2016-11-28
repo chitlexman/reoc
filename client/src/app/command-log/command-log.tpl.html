@@ -1,0 +1,28 @@
+<h1 class="page-header">Просмотр результатов</h1>
+
+<button class="btn btn-primary" ng-click="vm.refresh()">Обновить</button>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Команда</th>
+        <th>Комментарий</th>
+        <th>Статус</th>
+        <th>Вывод в консоль</th>
+        <th>Время запуска</th>
+        <th>Время завершения</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="c in vm.commands">
+        <td>{{c.command}}</td>
+        <td>{{c.comment}}</td>
+        <td>{{c.state}}</td>
+        <td>{{c.result}}</td>
+        <td>{{c.start | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+        <td>{{c.finish | date:'yyyy-MM-dd HH:mm:ss'}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
